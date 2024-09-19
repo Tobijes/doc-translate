@@ -1,2 +1,4 @@
 PyMuPDF
 pydantic
+python-docx
+httpx

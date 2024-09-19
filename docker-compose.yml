@@ -1,0 +1,15 @@
+services:
+  libretranslate:
+    image: libretranslate/libretranslate:v1.6.0-cuda
+    ports:
+      - "5000:5000"
+    environment:
+      LT_DEBUG: true
+      LT_LOAD_ONLY: en,da
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
