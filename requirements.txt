@@ -2,3 +2,4 @@ PyMuPDF
 pydantic
 python-docx
 httpx
+docling
